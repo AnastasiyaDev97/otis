@@ -1,11 +1,13 @@
-import { createBrowserRouter } from 'react-router-dom';
-
-import { App } from 'app';
+import { Home, OrderRegistration } from 'pages';
 import { ROUTES } from 'shared/constants';
 
-export const router = createBrowserRouter([
+export const router = [
   {
     path: ROUTES.HOME,
-    element: <App />,
+    element: <Home />,
   },
-]);
+  {
+    path: ROUTES.ORDER_REGISTRATION,
+    element: <OrderRegistration />,
+  },
+];

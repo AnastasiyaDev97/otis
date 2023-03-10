@@ -1,4 +1,10 @@
+import { type LiteralObjectKeysT } from 'shared/types/LiteralObjectKeysType';
+
+type MenuItemsT = typeof MENU_ITEMS;
+export type LiteralMenuItems = LiteralObjectKeysT<MenuItemsT>;
+
 export const MENU_ITEMS = {
+  HOME: 'На главную',
   ORDER_REGISTRATION: 'Регистрация заказа',
   ORDER_REGISTER: 'Реестр заказов',
   COSTING_SHEET: 'Калькуляционная ведомость',
