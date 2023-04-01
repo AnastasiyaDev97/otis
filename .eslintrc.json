@@ -57,6 +57,14 @@
         ]
       }
     ],
+    "@typescript-eslint/no-misused-promises": [
+      2,
+      {
+        "checksVoidReturn": {
+          "attributes": false
+        }
+      }
+    ],
     "import/extensions": "off",
     "import/prefer-default-export": "off",
     "consistent-return": "off",
@@ -73,12 +81,6 @@
     "no-shadow": "off",
     "no-debugger": "error",
     "no-unused-vars": "off",
-    "no-magic-numbers": [
-      "error",
-      {
-        "ignore": [0, 1, -1]
-      }
-    ],
     "no-use-before-define": "off",
     "no-param-reassign": [
       "error",
